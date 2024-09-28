@@ -15,7 +15,7 @@ module.exports = {
         main: "Inter",
       },
       lineHeight: {
-        xl: "70.19px",
+        h1: "70.19px",
       },
     },
   },
