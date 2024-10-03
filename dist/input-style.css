@@ -9,11 +9,20 @@
 }
 
 @media screen and (max-width: 990px) {
-  header .btn:hover + nav,
-  nav:hover,
-  section:hover {
-    display: block;
-    opacity: 1;
+  nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+    background-color: #000;
+    pointer-events: none;
+  }
+
+  .btn:hover ~ nav {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
