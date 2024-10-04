@@ -11,11 +11,11 @@
 @media screen and (max-width: 990px) {
   nav {
     position: absolute;
-    left: 0;
+    left: -200%;
     right: 0;
     top: 90px;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
     z-index: 10;
     background-color: #000;
     pointer-events: none;
@@ -23,6 +23,7 @@
 
   .btn:hover ~ nav {
     opacity: 1;
+    left: 0;
     pointer-events: auto;
   }
 }

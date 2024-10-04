@@ -594,18 +594,6 @@ video {
   top: 0px;
 }
 
-.top-\[88px\] {
-  top: 88px;
-}
-
-.top-\[70px\] {
-  top: 70px;
-}
-
-.top-\[75px\] {
-  top: 75px;
-}
-
 .top-\[76px\] {
   top: 76px;
 }
@@ -679,6 +667,10 @@ video {
   margin-top: auto;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -695,8 +687,8 @@ video {
   height: 0.25rem;
 }
 
-.h-16 {
-  height: 4rem;
+.h-12 {
+  height: 3rem;
 }
 
 .h-20 {
@@ -711,8 +703,8 @@ video {
   height: 390px;
 }
 
-.h-\[62\%\] {
-  height: 62%;
+.h-\[69\%\] {
+  height: 69%;
 }
 
 .h-\[72px\] {
@@ -732,22 +724,6 @@ video {
   height: 100%;
 }
 
-.h-\[63\%\] {
-  height: 63%;
-}
-
-.h-\[65\%\] {
-  height: 65%;
-}
-
-.h-\[69\%\] {
-  height: 69%;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
 .max-h-\[350px\] {
   max-height: 350px;
 }
@@ -764,8 +740,8 @@ video {
   width: 2.5rem;
 }
 
-.w-16 {
-  width: 4rem;
+.w-12 {
+  width: 3rem;
 }
 
 .w-24 {
@@ -786,10 +762,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .max-w-full {
@@ -854,6 +826,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .rounded {
@@ -963,6 +939,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -977,6 +958,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-center {
@@ -1082,11 +1067,11 @@ video {
 @media screen and (max-width: 990px) {
   nav {
     position: absolute;
-    left: 0;
+    left: -200%;
     right: 0;
     top: 90px;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
     z-index: 10;
     background-color: #000;
     pointer-events: none;
@@ -1094,6 +1079,7 @@ video {
 
   .btn:hover ~ nav {
     opacity: 1;
+    left: 0;
     pointer-events: auto;
   }
 }
@@ -1397,12 +1383,12 @@ video {
     background-color: transparent;
   }
 
-  .lg\:p-12 {
-    padding: 3rem;
-  }
-
   .lg\:p-0 {
     padding: 0px;
+  }
+
+  .lg\:p-12 {
+    padding: 3rem;
   }
 
   .lg\:px-0 {
@@ -1527,6 +1513,10 @@ video {
 
   .lg\:leading-h1 {
     line-height: 70.19px;
+  }
+
+  .lg\:leading-\[39\.6px\] {
+    line-height: 39.6px;
   }
 
   .lg\:text-content {
