@@ -166,7 +166,7 @@
         <img
           src="./dist/assets/3.png"
           alt=""
-          class="lg:h-full lg:max-h-full h-fit max-h-[380px] w-full order-2 lg:order-1"
+          class="lg:h-full lg:max-h-full h-fit max-h-[380px] object-cover w-full order-2 lg:order-1"
         />
         <div class="flex flex-col items-start gap-3 mt-4 lg:mt-0 lg:gap-0">
           <h1 class="xl:text-5xl lg:text-4xl text-3xl font-semibold capitalize">
@@ -223,7 +223,7 @@
                   <img src="./dist/assets/icons/design-steps1.svg" />
                 </div>
                 <div
-                  class="lg:h-[70%] h-[69%] top-[76px] w-[1px] bg-[#9B9B9B] m-auto lg:mt-3 absolute left-8 lg:top-[72px]"
+                  class="lg:h-[70%] h-[68%] md:h-[60%] top-[75px] md:top-[68px] w-[1px] bg-[#9B9B9B] m-auto lg:mt-3 absolute lg:left-8 left-9 lg:top-[72px]"
                 ></div>
               </div>
               <div class="grid lg:gap-4 gap-2 lg:mt-4 mt-2">
@@ -243,7 +243,7 @@
                   <img src="./dist/assets/icons/design-steps2.svg" />
                 </div>
                 <div
-                  class="lg:h-[70%] h-[69%] top-[76px] w-[1px] bg-[#9B9B9B] m-auto lg:mt-3 absolute left-8 lg:top-[72px]"
+                  class="lg:h-[70%] h-[68%] md:h-[60%] top-[75px] md:top-[68px] w-[1px] bg-[#9B9B9B] m-auto lg:mt-3 absolute lg:left-8 left-9 lg:top-[72px]"
                 ></div>
               </div>
               <div class="grid lg:gap-4 gap-2 lg:mt-4 mt-2">
@@ -277,7 +277,7 @@
           <img
             src="./dist/assets/4.png"
             alt=""
-            class="lg:h-full h-fit max-h-[350px] lg:max-h-full w-full"
+            class="lg:h-full h-fit max-h-[350px] object-cover md:h-[400px] lg:max-h-full w-full"
           />
         </div>
       </section>
@@ -285,20 +285,23 @@
       <section
         class="xl:mt-56 lg:mt-40 mt-16 grid lg:flex lg:gap-12 gap-4 relative"
       >
+        <h1 class="lg:hidden text-3xl font-semibold capitalize w-full">
+          What our customers say about us
+        </h1>
         <img
           src="./dist/assets/5.png"
-          class="lg:h-full h-[390px] w-full hidden lg:flex"
+          class="lg:h-full h-[390px] w-full"
           alt=""
         />
-        <h1 class="lg:text-5xl text-3xl font-semibold capitalize w-full">
+        <h1 class="text-5xl lg:flex hidden font-semibold capitalize w-full">
           What our customers say about us
         </h1>
         <div>
           <div
-            class="lg:absolute lg:left-64 lg:top-[220px] grid md:grid-cols-2 lg:gap-12 gap-3"
+            class="absolute lg:left-64 lg:top-[220px] top-[200px] md:top-[175px] grid lg:grid-cols-2 grid-cols-3 lg:gap-12 gap-3"
           >
             <div
-              class="bg-black hidden lg:p-12 p-4 items-start gap-4 lg:grid lg:gap-12 w-full lg:h-[590px] text-white rounded"
+              class="bg-black opacity-0 lg:p-12 p-4 items-start gap-4 col-span-1 lg:grid lg:opacity-100 lg:gap-12 w-full lg:h-[590px] text-white rounded"
             >
               <img src="./dist/assets/icons/quote.svg" alt="" />
               <p class="lg:text-xl">
@@ -315,16 +318,20 @@
               </div>
             </div>
             <div
-              class="bg-black lg:p-12 p-4 flex flex-col items-start gap-8 lg:grid lg:gap-12 w-full lg:h-[590px] text-white rounded"
+              class="bg-black lg:p-12 col-span-2 lg:col-span-1 p-4 flex flex-col items-start gap-5 lg:grid md:gap-12 w-full h-[380px] lg:h-[590px] text-white rounded"
             >
-              <img src="./dist/assets/icons/quote.svg" alt="" />
-              <p class="lg:text-xl">
+              <img src="./dist/assets/icons/quote.svg" alt="" class="w-[10%]" />
+              <p class="lg:text-xl tex-sm">
                 Working with your design team was an absolute pleasure. The
                 attention to detail and creativity exceeded my expectations.
                 Thank you for making my home beautiful!
               </p>
-              <div class="flex items-center lg:gap-6 gap-2">
-                <img src="./dist/assets/customer.png" alt="" />
+              <div class="lg:flex lg:items-center grid lg:gap-6 gap-2">
+                <img
+                  src="./dist/assets/customer.png"
+                  alt=""
+                  class="w-[50%] lg:w-[72px]"
+                />
                 <div>
                   <h2 class="lg:text-xl font-semibold">James Bennett</h2>
                   <p class="text-[#929292] lg:text-lg">Toronto, Canada</p>
@@ -333,15 +340,15 @@
             </div>
           </div>
           <div
-            class="lg:absolute left-0 lg:-bottom-24 pt-6 flex lg:gap-8 gap-4"
+            class="lg:absolute left-0 lg:-bottom-24 pt-4 flex md:gap-8 gap-4"
           >
             <button
-              class="bg-[#F1F1F1] lg:w-20 lg:h-20 w-12 h-12 p-3 lg:p-0 rounded flex items-center justify-center"
+              class="bg-[#F1F1F1] md:w-20 md:h-20 w-16 h-16 p-3 md:p-0 rounded flex items-center justify-center"
             >
               <img src="./dist/assets/icons/left-arrow.svg" alt="" />
             </button>
             <button
-              class="bg-[#F1F1F1] lg:w-20 lg:h-20 w-12 h-12 p-3 lg:p-0 rounded flex items-center justify-center"
+              class="bg-[#F1F1F1] md:w-20 md:h-20 w-16 h-16 p-3 md:p-0 rounded flex items-center justify-center"
             >
               <img src="./dist/assets/icons/right-arrow.svg" alt="" />
             </button>
