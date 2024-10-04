@@ -17,7 +17,7 @@ module.exports = {
         paragraph: "22px",
       },
       fontFamily: {
-        main: "Inter",
+        main: ["Inter", "sans-serif"],
       },
       lineHeight: {
         h1: "70.19px",
